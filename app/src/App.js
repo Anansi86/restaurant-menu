@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import Accordion from './components/Accordion';
 import axios from 'axios';
 import GetHeader from './components/Header';
+import GetFooter from './components/Footer';
+import GetBody from './components/Body';
 
 function App() {
    
@@ -26,7 +28,11 @@ function App() {
             <div className='container'>
                  <GetHeader />
                  <div className='container'>
-                <h1> {myAccordion} </h1>
+                  <GetBody />
+                 <h1> {myAccordion} </h1>
+                   <div className='container'>
+                      <GetFooter />
+                   </div>   
                 </div>
             </div>
         )

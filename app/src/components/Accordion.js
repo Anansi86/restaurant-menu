@@ -1,4 +1,4 @@
-export default function Accordion(props){
+ function Accordion(props){
     return (
         <>
 <div className="accordion" id={props.item.id}>
@@ -18,3 +18,4 @@ export default function Accordion(props){
 
 </>)
 }
+export default Accordion
